@@ -30,7 +30,6 @@ Todos os requisitos foram atendidos: diagramação fiel, responsividade, carross
 - Estilização com CSS e classes do Bootstrap
 - Carrosséis funcionais implementados com **Slick Carousel**
 - Responsividade garantida para **480px**
-- Layout idêntico ao fornecido
 
 ---
 
