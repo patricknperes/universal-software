@@ -46,4 +46,3 @@ Todos os requisitos foram atendidos: diagramação fiel, responsividade, carross
 1. Baixe ou clone este repositório:
    ```bash
    git clone https://github.com/seu-usuario/seu-repositorio.git
-   ```
