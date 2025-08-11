@@ -4,6 +4,13 @@ Projeto desenvolvido como parte de um teste técnico para diagramação de pági
 
 ---
 
+## 🌐 Deploy Online
+
+O projeto também pode ser acessado diretamente pelo link abaixo:  
+🔗 **[Visualizar Landing Page](https://universalsoftware.netlify.app/)**
+
+---
+
 ## 📌 Visão Geral
 
 Landing page construída a partir de layout fornecido pelo avaliador, seguindo as especificações solicitadas.  
