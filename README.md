@@ -37,7 +37,7 @@ Todos os requisitos foram atendidos: diagramação fiel, responsividade, carross
 
 > Como se trata de uma landing page estática, segue a visualização do projeto concluído:
 
-![Captura de Tela da Landing Page](../universal-software/img/capturaDeTela.png)
+![Captura de Tela da Landing Page](img/capturaDeTela.png)
 
 ---
 
