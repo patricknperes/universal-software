@@ -19,7 +19,6 @@ Todos os requisitos foram atendidos: diagramação fiel, responsividade, carross
     <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40"/><br>CSS3</td>
     <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="40"/><br>Bootstrap</td>
     <td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40"/><br>JavaScript</td>
-    <td align="center"><img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-slick-carousel-most-popular-front-end-javascript-slider-library-logo-color-tal-revivo.png" width="40"/><br>Slick Carousel</td>
   </tr>
 </table>
 
