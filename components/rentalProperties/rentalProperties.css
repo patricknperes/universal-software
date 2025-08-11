@@ -1,0 +1,47 @@
+.rental-properties-container {
+  background-color: var(--light-color);
+}
+
+.rental-properties-content {
+  padding: 6rem 2rem 0;
+}
+
+.card-properties-rental {
+  background-color: var(--grey-color);
+  padding: 1rem;
+  display: flex !important;
+  flex-direction: row !important;
+  border-radius: 0.5rem !important;
+  margin-right: 16px;
+}
+
+.card-properties-rental h3 {
+  margin-top: var(--mb-1-5);
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.card-properties-rental h4 {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+/* Responsividade */
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .rental-properties-content {
+    padding: 4rem 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+}

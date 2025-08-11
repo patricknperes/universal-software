@@ -1,0 +1,90 @@
+/* components/footer/footer.css */
+footer a,
+p {
+  color: var(--light-title-color);
+  transition: color 0.2s;
+}
+
+.links li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: var(--mb-1);
+}
+
+.social-media li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: var(--mb-0-5);
+}
+
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+}
+
+.footer-content {
+  padding: 3.5rem 2rem 0;
+  font-size: var(--small-font-size);
+}
+
+footer h3 {
+  font-size: var(--normal-font-size);
+}
+
+footer i {
+  color: var(--light-title-color);
+}
+
+footer i:hover {
+  color: var(--light-color);
+}
+
+.social-icons li i {
+  font-size: var(--h2-font-size);
+}
+
+.social-icons li a:hover {
+  text-decoration: none;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+/* Responsividade */
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .grid-footer {
+    gap: 2.5rem;
+  }
+
+  .footer-contact {
+    gap: 2.5rem;
+  }
+
+  .social-media {
+    margin-bottom: 0;
+  }
+
+  .bottom-footer {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 0rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+}

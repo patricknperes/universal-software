@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Componentes carregados via JS -->
+    <div id="header"></div>
+
+    <div id="hero"></div>
+
+    <!-- Featured Properties -->
+    <div id="featuredProperties"></div>
+    <div class="featured-properties-container">
+      <div
+        class="featured-properties-content container d-flex flex-column align-items-center mb-5"
+      >
+        <h1>Imóveis Super Destaque</h1>
+        <hr class="hr-style opacity-100" />
+        <h2>Conheça Nossos Imóveis Escolhidos como Super Oportunidade</h2>
+      </div>
+    </div>
+
+    <div class="meu-slider container">
+      <div class="card larger shadow rounded">
+        <div class="card-img-1"></div>
+        <div class="card-img-2"></div>
+        <div class="card-info">
+          <h3>Venda - Apartamento à venda, 2 vagas, Centro - Ipatinga/MG</h3>
+          <ul>
+            <li><i class="ri-circle-fill"></i> 2 Vagas de Garagem</li>
+            <li><i class="ri-circle-fill"></i> Área Privativa: 80m²</li>
+            <li><i class="ri-circle-fill"></i> 2 Quartos</li>
+            <li><i class="ri-circle-fill"></i> 1 Suíte</li>
+          </ul>
+          <h3>R$ 350.000,00</h3>
+          <button class="btn card-button">Ver Detalhes</button>
+        </div>
+      </div>
+      <div class="card larger shadow rounded">
+        <div class="card-img-3"></div>
+        <div class="card-img-4"></div>
+        <div class="card-info">
+          <h3>Venda - Casa com piscina, 4 vagas, Cidade Nobre - Ipatinga/MG</h3>
+          <ul>
+            <li><i class="ri-circle-fill"></i> 4 Vagas de Garagem</li>
+            <li><i class="ri-circle-fill"></i> Área Privativa: 220m²</li>
+            <li><i class="ri-circle-fill"></i> 4 Quartos</li>
+            <li><i class="ri-circle-fill"></i> 2 Suítes</li>
+          </ul>
+          <h3>R$ 950.000,00</h3>
+          <button class="btn card-button">Ver Detalhes</button>
+        </div>
+      </div>
+      <div class="card larger shadow rounded">
+        <div class="card-img-5"></div>
+        <div class="card-img-6"></div>
+        <div class="card-info">
+          <h3>Venda - Cobertura duplex, 3 vagas, Horto - Ipatinga/MG</h3>
+          <ul>
+            <li><i class="ri-circle-fill"></i> 3 Vagas de Garagem</li>
+            <li><i class="ri-circle-fill"></i> Área Privativa: 180m²</li>
+            <li><i class="ri-circle-fill"></i> 3 Quartos</li>
+            <li><i class="ri-circle-fill"></i> 1 Suíte</li>
+          </ul>
+          <h3>R$ 780.000,00</h3>
+          <button class="btn card-button">Ver Detalhes</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Imóveis à Venda -->
+    <div id="properties-for-sale"></div>
+    <div class="properties-for-sale-container">
+      <div
+        class="properties-for-sale-content container d-flex flex-column align-items-center pb-5"
+      >
+        <h1>Imóveis em Destaque para Venda</h1>
+        <hr class="hr-style opacity-100" />
+        <h2>Conheça Nossos Imóveis em Destaque Disponíveis para Venda</h2>
+      </div>
+      <div class="meu-slider-properties container">
+        <div class="card-properties rounded">
+          <div class="card-info-properties">
+            <div class="card-img-1-sale rounded"></div>
+            <h3>Horto | Ipatinga</h3>
+            <h4>Apartamento Moderno com Varanda Gourmet</h4>
+
+            <div
+              class="d-flex flex-row align-items-end justify-content-between price"
+            >
+              <h3>R$ 420.000,00</h3>
+              <p>Código 10001</p>
+            </div>
+
+            <hr />
+
+            <div
+              class="d-flex flex-row align-items-center justify-content-between gap-3"
+            >
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-car-line"></i>
+                <p>2 Vagas</p>
+              </div>
+              <div class="d-flex flex-column align-items- info">
+                <i class="ri-expand-diagonal-line"></i>
+                <p>95m²</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-hotel-bed-line"></i>
+                <p>3 Quartos</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-user-star-line"></i>
+                <p>1 Suíte</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-properties rounded">
+          <div class="card-info-properties">
+            <div class="card-img-2 rounded"></div>
+            <h3>Cidade Nobre | Ipatinga</h3>
+            <h4>Casa com Piscina e Espaço Gourmet</h4>
+
+            <div
+              class="d-flex flex-row align-items-end justify-content-between price"
+            >
+              <h3>R$ 950.000,00</h3>
+              <p>Código 10002</p>
+            </div>
+
+            <hr />
+
+            <div
+              class="d-flex flex-row align-items-center justify-content-between gap-3"
+            >
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-car-line"></i>
+                <p>4 Vagas</p>
+              </div>
+              <div class="d-flex flex-column align-items- info">
+                <i class="ri-expand-diagonal-line"></i>
+                <p>220m²</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-hotel-bed-line"></i>
+                <p>4 Quartos</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-user-star-line"></i>
+                <p>2 Suítes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-properties rounded">
+          <div class="card-info-properties">
+            <div class="card-img-3-sale rounded"></div>
+            <h3>Centro | Ipatinga</h3>
+            <h4>Loft Compacto Próximo ao Comércio</h4>
+
+            <div
+              class="d-flex flex-row align-items-end justify-content-between price"
+            >
+              <h3>R$ 210.000,00</h3>
+              <p>Código 10003</p>
+            </div>
+
+            <hr />
+
+            <div
+              class="d-flex flex-row align-items-center justify-content-between gap-3"
+            >
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-car-line"></i>
+                <p>1 Vaga</p>
+              </div>
+              <div class="d-flex flex-column align-items- info">
+                <i class="ri-expand-diagonal-line"></i>
+                <p>45m²</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-hotel-bed-line"></i>
+                <p>1 Quarto</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-user-star-line"></i>
+                <p>1 Suíte</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-properties rounded">
+          <div class="card-info-properties">
+            <div class="card-img-4 rounded"></div>
+            <h3>Veneza | Ipatinga</h3>
+            <h4>Cobertura Duplex com Vista Panorâmica</h4>
+
+            <div
+              class="d-flex flex-row align-items-end justify-content-between price"
+            >
+              <h3>R$ 780.000,00</h3>
+              <p>Código 10004</p>
+            </div>
+
+            <hr />
+
+            <div
+              class="d-flex flex-row align-items-center justify-content-between gap-3"
+            >
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-car-line"></i>
+                <p>3 Vagas</p>
+              </div>
+              <div class="d-flex flex-column align-items- info">
+                <i class="ri-expand-diagonal-line"></i>
+                <p>180m²</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-hotel-bed-line"></i>
+                <p>3 Quartos</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-user-star-line"></i>
+                <p>1 Suíte</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-properties rounded">
+          <div class="card-info-properties">
+            <div class="card-img-5-sale rounded"></div>
+            <h3>Cariru | Ipatinga</h3>
+            <h4>Apartamento Amplo Próximo ao Parque</h4>
+
+            <div
+              class="d-flex flex-row align-items-end justify-content-between price"
+            >
+              <h3>R$ 330.000,00</h3>
+              <p>Código 10005</p>
+            </div>
+
+            <hr />
+
+            <div
+              class="d-flex flex-row align-items-center justify-content-between gap-3"
+            >
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-car-line"></i>
+                <p>2 Vagas</p>
+              </div>
+              <div class="d-flex flex-column align-items- info">
+                <i class="ri-expand-diagonal-line"></i>
+                <p>110m²</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-hotel-bed-line"></i>
+                <p>3 Quartos</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-user-star-line"></i>
+                <p>1 Suíte</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Imóveis para Aluguel -->
+    <div id="rental-properties"></div>
+    <div class="rental-properties-container">
+      <div
+        class="rental-properties-content container d-flex flex-column align-items-center py-5"
+      >
+        <h1>Imóveis em Destaque para Locação</h1>
+        <hr class="hr-style opacity-100" />
+        <h2>Conheça Nossos Imóveis em Destaque Disponíveis para Locação</h2>
+      </div>
+
+      <div class="meu-slider-properties container">
+        <div class="card-properties-rental rounded">
+          <div class="card-info-properties">
+            <div class="card-img-1-sale rounded"></div>
+            <h3>Horto | Ipatinga</h3>
+            <h4>Apartamento Moderno com Varanda Gourmet</h4>
+
+            <div
+              class="d-flex flex-row align-items-end justify-content-between price"
+            >
+              <h3>R$ 420.000,00</h3>
+              <p>Código 10001</p>
+            </div>
+
+            <hr />
+
+            <div
+              class="d-flex flex-row align-items-center justify-content-between gap-3"
+            >
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-car-line"></i>
+                <p>2 Vagas</p>
+              </div>
+              <div class="d-flex flex-column align-items- info">
+                <i class="ri-expand-diagonal-line"></i>
+                <p>95m²</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-hotel-bed-line"></i>
+                <p>3 Quartos</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-user-star-line"></i>
+                <p>1 Suíte</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-properties-rental rounded">
+          <div class="card-info-properties">
+            <div class="card-img-2 rounded"></div>
+            <h3>Cidade Nobre | Ipatinga</h3>
+            <h4>Casa com Piscina e Espaço Gourmet</h4>
+
+            <div
+              class="d-flex flex-row align-items-end justify-content-between price"
+            >
+              <h3>R$ 950.000,00</h3>
+              <p>Código 10002</p>
+            </div>
+
+            <hr />
+
+            <div
+              class="d-flex flex-row align-items-center justify-content-between gap-3"
+            >
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-car-line"></i>
+                <p>4 Vagas</p>
+              </div>
+              <div class="d-flex flex-column align-items- info">
+                <i class="ri-expand-diagonal-line"></i>
+                <p>220m²</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-hotel-bed-line"></i>
+                <p>4 Quartos</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-user-star-line"></i>
+                <p>2 Suítes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-properties-rental rounded">
+          <div class="card-info-properties">
+            <div class="card-img-3-sale rounded"></div>
+            <h3>Centro | Ipatinga</h3>
+            <h4>Loft Compacto Próximo ao Comércio</h4>
+
+            <div
+              class="d-flex flex-row align-items-end justify-content-between price"
+            >
+              <h3>R$ 210.000,00</h3>
+              <p>Código 10003</p>
+            </div>
+
+            <hr />
+
+            <div
+              class="d-flex flex-row align-items-center justify-content-between gap-3"
+            >
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-car-line"></i>
+                <p>1 Vaga</p>
+              </div>
+              <div class="d-flex flex-column align-items- info">
+                <i class="ri-expand-diagonal-line"></i>
+                <p>45m²</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-hotel-bed-line"></i>
+                <p>1 Quarto</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-user-star-line"></i>
+                <p>1 Suíte</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-properties-rental rounded">
+          <div class="card-info-properties">
+            <div class="card-img-4 rounded"></div>
+            <h3>Veneza | Ipatinga</h3>
+            <h4>Cobertura Duplex com Vista Panorâmica</h4>
+
+            <div
+              class="d-flex flex-row align-items-end justify-content-between price"
+            >
+              <h3>R$ 780.000,00</h3>
+              <p>Código 10004</p>
+            </div>
+
+            <hr />
+
+            <div
+              class="d-flex flex-row align-items-center justify-content-between gap-3"
+            >
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-car-line"></i>
+                <p>3 Vagas</p>
+              </div>
+              <div class="d-flex flex-column align-items- info">
+                <i class="ri-expand-diagonal-line"></i>
+                <p>180m²</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-hotel-bed-line"></i>
+                <p>3 Quartos</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-user-star-line"></i>
+                <p>1 Suíte</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-properties-rental rounded">
+          <div class="card-info-properties">
+            <div class="card-img-5-sale rounded"></div>
+            <h3>Cariru | Ipatinga</h3>
+            <h4>Apartamento Amplo Próximo ao Parque</h4>
+
+            <div
+              class="d-flex flex-row align-items-end justify-content-between price"
+            >
+              <h3>R$ 330.000,00</h3>
+              <p>Código 10005</p>
+            </div>
+
+            <hr />
+
+            <div
+              class="d-flex flex-row align-items-center justify-content-between gap-3"
+            >
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-car-line"></i>
+                <p>2 Vagas</p>
+              </div>
+              <div class="d-flex flex-column align-items- info">
+                <i class="ri-expand-diagonal-line"></i>
+                <p>110m²</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-hotel-bed-line"></i>
+                <p>3 Quartos</p>
+              </div>
+              <div class="d-flex flex-column align-items-center info">
+                <i class="ri-user-star-line"></i>
+                <p>1 Suíte</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="opening-hours"></div>
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".meu-slider").slick({
+          dots: true, // botões abaixo
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false, // sem setas
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+
+      $(document).ready(function () {
+        $(".meu-slider-properties").slick({
+          dots: true, // botões abaixo
+          infinite: true,
+          speed: 500,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false, // sem setas
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+
+        // Adiciona espaçamento entre os cards do slider
+        // $(".meu-slider-properties .card-properties").css("margin", "8px");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+.properties-for-sale-container {
+  background-color: var(--grey-color);
+}
+
+.properties-for-sale-content {
+  padding: 6rem 2rem 0rem;
+}
+
+.meu-slider-properties {
+  overflow: hidden;
+  padding: 0 0rem 6rem;
+}
+
+.card-properties {
+  background-color: var(--light-color);
+  padding: 1rem;
+  display: flex !important;
+  flex-direction: row !important;
+  border-radius: 0.5rem !important;
+  margin-right: 16px;
+}
+
+.card-properties h3 {
+  margin-top: var(--mb-1-5);
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.card-properties h4 {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.price h3 {
+  font-size: var(--h2-font-size);
+}
+
+.price p {
+  font-size: var(--smaller-font-size);
+  color: var(--dark-text-color);
+}
+
+.info i {
+  font-size: var(--h2-font-size);
+}
+
+.info p {
+  font-size: var(--normal-font-size);
+  color: var(--dark-text-color);
+}
+
+.card-img-1-sale {
+  background-image: url("../../img/featuredProperties/properties1/2224.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+}
+
+.card-img-3-sale {
+  background-image: url("../../img/featuredProperties/properties1/2182.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+}
+
+.card-img-5-sale {
+  background-image: url("../../img/featuredProperties/properties1/2140.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+}
+
+/* Responsividade */
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .properties-for-sale-content {
+    padding: 4rem 1.5rem 0rem;
+  }
+
+  .meu-slider-properties {
+    padding: 0rem 1.5rem 4rem;
+  }
+  .card-properties {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .info i {
+    font-size: var(--h3-font-size);
+  }
+
+  .info p {
+    font-size: var(--small-font-size);
+    color: var(--dark-text-color);
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+}

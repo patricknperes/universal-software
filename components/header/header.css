@@ -1,0 +1,143 @@
+/* Estilos para o cabeçalho superior */
+.top-header {
+  background-color: var(--primary-color);
+}
+
+.top-header-content {
+  padding: 0.5rem 2rem;
+}
+
+.top-header-content ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.top-header-content ul li a {
+  font-size: var(--small-font-size);
+  color: var(--light-color);
+  transition: color 0.3s ease;
+}
+
+.top-header-content ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.top-header-content ul li i {
+  font-size: var(--h3-font-size);
+  color: var(--light-color);
+  transition: color 0.3s ease;
+}
+
+.top-header-content ul li a:hover i {
+  color: var(--secondary-color);
+}
+
+/* Estilos para o cabeçalho inferior (Navbar) */
+.bottom-header {
+  background-color: var(--light-color);
+}
+
+.bottom-header-content {
+  padding: 1.25rem 2rem;
+  width: 100%;
+}
+
+.bottom-header .navbar-nav {
+  flex-direction: row; /* Garante que os links fiquem lado a lado em telas maiores */
+}
+
+.bottom-header .navbar-nav .nav-item {
+  position: relative;
+}
+
+.bottom-header .navbar-nav .nav-link {
+  font-size: var(--small-font-size);
+  color: var(--dark-title-color);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 0; /* Remove padding padrão do Bootstrap */
+}
+
+.bottom-header .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.bottom-header .navbar-nav .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.bottom-header .navbar-nav .nav-link:hover {
+  color: var(--dark-title-color);
+}
+
+.img-container {
+  max-width: 100%;
+  width: 180px;
+  height: auto;
+}
+
+/* Estilos Responsivos */
+@media (min-width: 992px) {
+  /* Esconde o botão de alternância em telas maiores que 992px */
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Mostra o botão de alternância em telas menores que 992px */
+  .navbar-toggler {
+    display: block;
+    border: none;
+    font-size: 2rem;
+    color: var(--dark-title-color);
+    background-color: transparent;
+  }
+
+  /* Ajusta o menu dropdown */
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Posiciona o menu abaixo do header */
+    left: 0;
+    width: 100%;
+    background-color: var(--light-color);
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Faz os links ficarem em coluna */
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: var(--normal-font-size);
+    width: 100%;
+    display: block;
+  }
+
+  .navbar-nav .nav-link::after {
+    display: none; /* Esconde a animação de sublinhado no dropdown */
+  }
+
+  .img-container {
+    width: 150px;
+  }
+}
